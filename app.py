@@ -4,6 +4,7 @@ from audiorecorder import audiorecorder
 from pydantic import BaseModel, Field
 from dotenv import load_dotenv
 import os
+import webbrowser
 import uuid
 import time
 from typing import List, Tuple
@@ -189,11 +190,11 @@ chain = (
 os.makedirs("temp", exist_ok=True)
 
 # Configure tabs
-tab1, tab2 = st.tabs(["Mental Health Assistant", "Dermatology Analysis"])
+tab1, tab2,tab3 = st.tabs(["Mental Health Assistant", "Dermatology Analysis","Diabetes Assistant"])
 
 with tab1:
     # Original mental health chat interface
-    st.title("Mental Health Knowledge Assistant �")
+    st.title("Mental Health Knowledge Assistant 🧠(GraphRAG)")
     st.markdown("Ask about Major Depressive Disorder and related concepts")
 
     if "messages_tab1" not in st.session_state:
@@ -335,3 +336,16 @@ with tab2:
                         
                 except Exception as e:
                     st.error(f"Analysis error: {str(e)}")
+with tab3:
+    st.title("Diabetes Assistant")
+    st.markdown("Click below to open the Diabetes Management Assistant")
+    
+    if st.button("Open Diabetes Assistant", key="open_diabetes"):
+        try:
+            # Try to open in a new browser tab
+            webbrowser.open_new_tab("http://localhost:8504/")
+            st.success("Opening Diabetes Assistant in a new tab...")
+        except Exception as e:
+            st.error(f"Could not open browser: {str(e)}")
+            st.markdown("Please visit [Diabetes Assistant](http://localhost:8504/)")
+    
