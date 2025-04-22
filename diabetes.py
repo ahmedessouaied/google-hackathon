@@ -231,7 +231,7 @@ def create_weekly_schedule_events(schedule, days=7):
 def get_schedule_from_llm(metrics_data):
     """Get personalized schedule from LLM"""
     try:
-        client = Groq(api_key="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")
+        client = Groq(api_key="gsk_ya_7alouuuuuuf")
 
         prompt = f"""
         Based on these health metrics, create a personalized weekly schedule to help prevent diabetes.
