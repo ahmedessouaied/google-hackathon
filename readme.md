@@ -2,7 +2,7 @@
 
 > Where healthcare meets automation: Transforming unstructured medical data into actionable insights with voice, vision, and text capabilities.
 
-## 🏆 AI Anatomy Hackathon Project
+## 🏆 1st Place: AI Anatomy Hackathon Project
 GDG SUP'COM x Carthage - April 19, 2025
 
 ## 📋 Project Overview
@@ -149,8 +149,8 @@ ai-doctor/
 
 ## 👥 Team
 
-- Iheb Bettaibe
-- Ahmed Essaoudi
+- Iheb Bettaieb
+- Ahmed Essouaied
 - Wassim Derwich
 - Nidhal Sanaa
 
@@ -161,7 +161,3 @@ This project is licensed under the MIT License - see the LICENSE file for detail
 ## 🙏 Acknowledgments
 
 - GDG SUP'COM x Carthage for organizing the AI Anatomy hackathon
-- Kaggle for hosting the Clinical NLP Challenge
-- Meta for the Llama3 Vision 90B model
-- OpenAI for the Whisper model
-- Open-source NLP and medical informatics communities
